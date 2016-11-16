@@ -20,5 +20,5 @@ function takeElement{
         array[i][1] = x[1].innerHTML;
         console.log(array[i][0]);
     }
-        
+     aaaa  
 }
