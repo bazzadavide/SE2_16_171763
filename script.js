@@ -75,3 +75,59 @@ function cancelAndRedo(element1,element2,point){
     cell2.innerHTML = element2;
     
 }
+
+
+Formal Validation:
+-I test eseguiti via informal validation devono essere ri eseguiti
+-SPR vengono sviluppati per ogni fail test
+-Per ogni bug fixato l'SPR identifica in quali sono stati modificati per questo fix
+-Assicurarsi di aver modificato solo moduli modificabili
+Exit Criteria:
+-Tutti gli script sono stati eseguiti
+-Tutti gli SPR sono stati risolti
+-Tutte le modifiche a causa dell'SPR sono state testati
+-Tutti i documenti sono stati aggiornati in base alle modifiche effettuate nei test
+-Test report approvato
+
+-White Box Testing
+Coverage del codice:
+-Function coverage, è stata chiamata ogni funzione?
+-Statement coverage: son stati chiamate tutte le rige del codice?
+-Branch coverage: ad esempio per un if, è stato chiamato sia la versione true che false?
+-Condition coverage: controllo di tutte le espressioni booleane
+-Loop Coverage: è testato 0, 1 e +1 volte?
+-Path Coverage: quanti path hai seguito nello sviluppo del codice
+MC/DC(modified condition/decision coverage)
+-ogni punto di entrata ed uscita del software è stato chiamato
+-ogni decisione prende tutte le strade possibili
+-ogni condizione in una decisione prende tutte le strade possibili
+
+
+
+-Come valutare un Software
+Qualità del software:
+Correttezza se soddisfa i requisiti iniziali
+Affidabilità: quanto gli user possono affidarsi ad un software senza che crei errori/dia problemi
+Robustezza: Anche in casi estremi il software funziona egregiamente
+Performance: velocità nello svolgere il proprio compito
+Usability: quanto user friendly è
+Reusability: quanto può essere riciclato per un nuovo software
+Generability: quanto è in grado di risolvere problemi più generali di quello che la richiesta ha specificato
+	      poter far fronte a recquisiti che si evolvono
+Portability: su quante piattaforme può girare
+Maintanability: quanto è facile da mantenere
+Evolvability: quanto facilmente si può evolvere
+
+Altro fattore importante è che il codice deve essere del buon codice, aiuta molto una manuntenzione futura del software
+Deve essere elegante e semplice in caso necessiti interventi
+Usare nomi rappresentativi per variabili e funzioni
+Non mettere effetti secondari speciali non voluti
+Non mischiare le funzioni, tenerle più brevi possibili
+Usare i commenti
+Nascondere bene informazioni importanti
+Per una fase di code review è sempre buona norma interpellare qualcun'altro 
+
+-MVC Model-View-Controller
+Model: gestisce la logica
+View: la vista che avrà l'utente del software
+Controller: cattura in input ciò che mette l'utente nel view e lo passa al model
