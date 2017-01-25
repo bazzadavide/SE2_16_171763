@@ -262,3 +262,56 @@ Per una fase di code review è sempre buona norma interpellare qualcun'altro
 Model: gestisce la logica
 View: la vista che avrà l'utente del software
 Controller: cattura in input ciò che mette l'utente nel view e lo passa al model
+
+
+1-create GitHub project
+    a.Remember to add a .gitignore and set it “Node”
+2-clone GitHub project
+    -git clone <project link>
+3-create an Heroku server
+    -heroku create
+4-crate the branches for test and development
+    -git branch test
+    -git push origin test
+    -git branch dev
+    -git push origin dev
+5-create your Node.js app
+    -git checkout dev
+    -npm init
+    -create your app
+    -npm install <lib> --save
+    -add "start": "node index.js" to the script section of package.json
+    -git add .
+    -git commit –am “message”
+6-finish dev and test
+    -git push origin dev
+    -git checkout test
+    -git merge dev
+    -git push origin test
+    -git checkout master
+    -git merge test
+    -git push origin master
+7-deploy your application
+    -git push heroku master
+    -heroku ps:scale web=1
+8-open your app
+    -heroku open
+9-check logs
+    -heroku logs –tail
+10-add Procfile
+    -git checkout dev
+    -add your Procfile
+    -git add Procfile
+    -git commit –m “message”
+    -git push origin dev
+    -git checkout test
+    -git merge dev
+11-test your application work correctly
+    -heroku local web
+12-if it works correctly proceed, otherwise go back in dev
+    -git push origin test
+    -git checkout master
+    -git merge test
+    -git push origin master
+13-deploy your application
+    -git push heroku master
